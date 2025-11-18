@@ -26,13 +26,13 @@
     <div class="auth-buttons">
       <?php if (isset($_SESSION['fullname']) && !empty($_SESSION['fullname'])): ?> 
         <span style="font-weight: bold; color:#e6b478; padding: 8px; background-color:white; border: 2px solid transparent; border-radius: 8px;">
-          <a href="WebKhachSan/Nhom3/TrangChu/mainpage/profile_edit.php" style="color: #e6b478; text-decoration: none;">
+          <a href="Nhom3/TrangChu/mainpage/profile_edit.php" style="color: #e6b478; text-decoration: none;">
           <i class="fa-solid fa-user" style="color: #55abf7;"></i>
           <?= htmlspecialchars($_SESSION['fullname']) ?></span> 
        <a href="WebKhachSan/Nhom3/TrangChu/main page/logout.php" class="dangxuat">Đăng xuất</a>
       <?php else: ?>
-        <a href="WebKhachSan/Nhom3/TrangChu/main page/formDangKy.php" class="dangky"> <i class="fa-solid fa-user" style="color: white;"></i> Đăng ký</a>
-        <a href="WebKhachSan/Nhom3/TrangChu/main page/formDangNhap.php" class="dangnhap"><i class="fa-solid fa-user" style="color: black;"></i>Đăng nhập</a>
+        <a href="Nhom3/TrangChu/mainpage/dangky.php" class="dangky"> <i class="fa-solid fa-user" style="color: white;"></i> Đăng ký</a>
+        <a href="Nhom3/TrangChu/mainpage/dangnhap.php" class="dangnhap"><i class="fa-solid fa-user" style="color: black;"></i>Đăng nhập</a>
       <?php endif; ?>
     </div>
   </header>
