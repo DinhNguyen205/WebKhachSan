@@ -76,6 +76,99 @@
             <p><strong>&bull; Từ TP. Quy Nhơn → đến bến Nhơn Lý → đi ca nô ra đảo (15 phút)</strong> hoặc đi đường bộ bằng xe trung chuyển qua đèo Eo Gió (đường mới, đẹp)</p>
             <p><strong>&bull;</strong> Nên đi từ sáng sớm để tận hưởng trọn vẹn vẻ đẹp trong lành của biển.</p>
         </section>
+      <section class="section-tiennghi" id="tiennghi">
+    <h2>Tiện Nghi & Dịch Vụ Tại Khách Sạn Quy Nhơn</h2>
+
+    <h3>Phòng Nghỉ Hiện Đại – Tiện Nghi Đầy Đủ</h3>
+    <p>
+        Hệ thống phòng nghỉ tại Khách Sạn Quy Nhơn được thiết kế theo phong cách sang trọng và ấm cúng,
+        phù hợp cho gia đình, cặp đôi và khách công tác. Mỗi phòng đều được trang bị:
+    </p>
+    <ul>
+        <li>Giường nệm cao cấp, mềm mại và sạch sẽ</li>
+        <li>Điều hòa 2 chiều hiện đại</li>
+        <li>Smart TV màn hình lớn</li>
+        <li>Wi-Fi tốc độ cao miễn phí</li>
+        <li>Tủ lạnh mini – nước uống miễn phí</li>
+        <li>Phòng tắm riêng với nước nóng 24/7</li>
+        <li>Ban công view biển (tùy loại phòng)</li>
+    </ul>
+
+    <h3>Dịch Vụ Cho Kỳ Nghỉ Hoàn Hảo</h3>
+    <ul>
+        <li>Dọn phòng hằng ngày, đảm bảo không gian luôn sạch sẽ</li>
+        <li>Giặt ủi theo yêu cầu</li>
+        <li>Đưa đón sân bay Quy Nhơn</li>
+        <li>Thuê xe máy – xe ô tô thuận tiện khám phá thành phố</li>
+        <li>Đặt tour Kỳ Co, Eo Gió, Hòn Khô trực tiếp tại lễ tân</li>
+        <li>Hỗ trợ 24/7 tại quầy lễ tân</li>
+    </ul>
+
+    <h3>Nhà Hàng & Ẩm Thực</h3>
+    <p>
+        Khách sạn có khu vực nhà hàng phục vụ bữa sáng buffet và các món ăn đặc sản Bình Định.
+        Không gian rộng rãi, thoáng mát, phù hợp cho gia đình, nhóm bạn và khách công tác.
+    </p>
+</section>
+
+<section class="section-loaiphong" id="loaiphong">
+    <h2>Các Loại Phòng Tại Khách Sạn Quy Nhơn</h2>
+
+    <h3>Phòng Tiêu Chuẩn</h3>
+    <p>
+        Phù hợp cho 1–2 khách, được trang bị đầy đủ tiện nghi cơ bản, thiết kế đơn giản, ấm cúng,
+        thích hợp cho chuyến công tác ngắn ngày hoặc du lịch tiết kiệm.
+    </p>
+
+    <h3>Phòng Gia Đình</h3>
+    <p>
+        Diện tích rộng rãi, có thể ở 3–4 người, không gian thoáng mát, mang lại sự thoải mái cho các gia đình
+        hoặc nhóm bạn khi lưu trú tại Quy Nhơn.
+    </p>
+
+    <h3>Phòng Suite View Biển</h3>
+    <p>
+        Là hạng phòng cao cấp với tầm nhìn hướng biển, nội thất hiện đại, sang trọng. Đây là lựa chọn lý tưởng
+        cho các cặp đôi hoặc những khách hàng muốn tận hưởng kỳ nghỉ đẳng cấp.
+    </p>
+</section>
+
+<section class="section-uudai" id="uudai">
+    <h2>Ưu Đãi & Khuyến Mãi</h2>
+    <ul>
+        <li>Giảm giá cho khách đặt phòng sớm trước ngày nhận phòng từ 14–30 ngày.</li>
+        <li>Chương trình ưu đãi dành cho khách lưu trú từ 3 đêm trở lên.</li>
+        <li>Combo phòng nghỉ kèm tour tham quan Kỳ Co – Eo Gió với giá ưu đãi.</li>
+        <li>Giảm giá đặc biệt cho khách đoàn, công ty và khách tổ chức sự kiện.</li>
+    </ul>
+</section>
+
+<section class="section-danhgia" id="danhgia">
+    <h2>Vì Sao Nên Chọn Khách Sạn Quy Nhơn?</h2>
+    <ul>
+        <li>Vị trí đẹp – gần biển và trung tâm thành phố, thuận tiện di chuyển.</li>
+        <li>Không gian sạch sẽ, hiện đại – phù hợp cho gia đình, cặp đôi và khách công tác.</li>
+        <li>Nhân viên thân thiện, hỗ trợ tận tâm trong suốt thời gian lưu trú.</li>
+        <li>Giá phòng hợp lý, thường xuyên có ưu đãi theo mùa.</li>
+        <li>Dễ dàng kết nối các điểm du lịch nổi tiếng như Kỳ Co, Eo Gió, Hòn Khô, Cù Lao Xanh…</li>
+    </ul>
+</section>
+
+<section class="section-faq" id="faq">
+    <h2>Câu Hỏi Thường Gặp</h2>
+
+    <h3>Giờ nhận phòng và trả phòng như thế nào?</h3>
+    <p>Giờ nhận phòng từ 14:00 và trả phòng trước 12:00 trưa ngày hôm sau. Có thể linh hoạt tùy tình trạng phòng.</p>
+
+    <h3>Khách sạn có bãi đỗ xe không?</h3>
+    <p>Khách sạn có khu vực đỗ xe dành cho xe máy và ô tô nhỏ, miễn phí cho khách lưu trú.</p>
+
+    <h3>Có phục vụ ăn sáng không?</h3>
+    <p>Khách sạn phục vụ bữa sáng hằng ngày tại nhà hàng với các món ăn nhẹ, món Việt và đặc sản địa phương.</p>
+
+    <h3>Có hỗ trợ đặt tour tham quan không?</h3>
+    <p>Lễ tân hỗ trợ đặt tour tham quan Kỳ Co, Eo Gió, Hòn Khô và các điểm đến khác theo nhu cầu của khách.</p>
+</section>
   </div>
 
   <div class="sidebar">
