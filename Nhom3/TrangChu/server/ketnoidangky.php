@@ -26,7 +26,7 @@ require '../connect/connect.php';
 
             $_SESSION['username'] = $username;
             $_SESSION['fullname'] = '';
-            header("Location: Nhom3/TrangChu/mainpage/thongtincanhan.php");
+            header("Location: ../TrangChu/mainpage/thongtincanhan.php");
             exit;
             }
         } catch (PDOException $e) {
