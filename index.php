@@ -46,65 +46,47 @@
 
       <section class="section-gioithieu" id="gioithieu">
         <h2>✨ Giới thiệu về khách sạn quy nhơn</h2>
-        <h3>🌆 Khám Phá Thành Phố Biển Quy Nhơn:</h3>
-        <p><strong>Quy Nhơn</strong> – viên ngọc xanh của miền Trung, là thành phố biển tuyệt đẹp thuộc tỉnh Bình Định. Với vẻ đẹp hoang sơ, nước biển xanh biếc, bãi cát trắng mịn và nhịp sống thanh bình, nơi đây đang dần trở thành điểm đến yêu thích của du khách trong và ngoài nước.</p>
-        <p>Tọa lạc tại vị trí lý tưởng giữa miền Trung, Quy Nhơn cách Hà Nội khoảng 1.065 km, cách TP. Hồ Chí Minh 650 km, Đà Nẵng 323 km và chỉ 165 km từ thành phố Pleiku. Dù bạn đến từ đâu, hành trình khám phá Quy Nhơn luôn đáng giá từng khoảnh khắc.</p>
-        <p>Với bề dày lịch sử, Quy Nhơn từng là vùng đất của vương quốc Champa cổ đại. Ngày nay, dấu ấn văn hóa Chăm vẫn hiện diện qua những đền tháp, di tích cổ kính. Sau năm 1975, Quy Nhơn được nâng cấp thành thành phố vào năm 1986, và đến năm 2010 chính thức trở thành đô thị loại I. Năm 2015, tạp chí Rough Guides (Anh) bình chọn Quy Nhơn là điểm đến hàng đầu Đông Nam Á, và năm 2020 tiếp tục góp mặt trong top 20 điểm đến hấp dẫn nhất thế giới do Hostelworld bình chọn.</p>
+        <p><strong>Khách Sạn Quy Nhơn</strong> là điểm dừng chân lý tưởng dành cho du khách muốn tận hưởng kỳ nghỉ trọn vẹn giữa lòng thành phố biển xinh đẹp. Với vị trí đắc địa gần biển, gần trung tâm và các địa điểm du lịch nổi tiếng, khách sạn mang đến không gian lưu trú sang trọng, tiện nghi và thân thiện.</p>
+        <p>Khách sạn được thiết kế theo phong cách hiện đại kết hợp tinh tế với nét đẹp miền biển, tạo cảm giác thư giãn và thoải mái ngay từ khi du khách đặt chân đến. Mỗi phòng đều được trang bị đầy đủ tiện nghi cao cấp, hướng đến sự thoải mái tối đa cho khách lưu trú.</p>
         <div style="text-align: center;">
           <img class="anhthuhai" src="https://reviewnhatrang.com.vn/wp-content/uploads/2022/12/15-1024x576.jpg" alt="Quy Nhơn biển đẹp">
         </div>
-        <h3>🌤️ Địa Hình & Khí Hậu – Món Quà Từ Thiên Nhiên:</h3>
-        <p>Quy Nhơn sở hữu địa hình đa dạng với sự kết hợp hài hòa giữa núi, đồi, đồng bằng, biển cả và các đảo nhỏ. Bạn có thể khám phá <strong>núi Đen</strong> hùng vĩ, <strong>rừng nguyên sinh đèo Cù Mông</strong>, <strong>Đầm Thị Nại</strong> thơ mộng, <strong>Hồ Sinh Thái</strong> hay <strong>bán đảo Phương Mai</strong> nổi bật bên biển xanh. Đặc biệt, <strong>đảo Nhơn Châu (Cù lao Xanh)</strong> như một bức tranh thiên nhiên kỳ vĩ, là điểm đến không thể bỏ lỡ.</p>
-        <p>Với đường bờ biển dài hơn 70km và hệ sinh thái biển phong phú, Quy Nhơn không chỉ nổi tiếng về cảnh quan mà còn là nơi phát triển mạnh về nuôi trồng, đánh bắt thủy sản và du lịch sinh thái biển.</p>
-        <p>Khí hậu nơi đây chia làm hai mùa rõ rệt: <strong>mùa khô</strong> từ tháng 3 đến tháng 9, lý tưởng cho các hoạt động du lịch, và <strong>mùa mưa</strong> từ tháng 10 đến tháng 2 năm sau. Nhiệt độ trung bình quanh năm khoảng 28°C, thời tiết dễ chịu, nắng vàng rực rỡ – lý tưởng cho chuyến đi nghỉ dưỡng hoặc khám phá.</p>  
+        <p>Chúng tôi luôn đặt trải nghiệm của khách hàng làm ưu tiên hàng đầu: từ phòng ốc sạch sẽ, tiện nghi đến đội ngũ nhân viên chuyên nghiệp, tận tâm, sẵn sàng hỗ trợ 24/7.</p>
        </section>
 
         <section class="section-diemnoibat" id="diemnoibat">
-        <h2>🗺️Những điểm nổi bật của khách sạn Quy Nhơn</h2>
-            <h3>🏝️1. Kỳ Co – Thiên đường biển đảo</h3>
+        <h2>Những điểm nổi bật của khách sạn Quy Nhơn</h2>
+            <h3>1. Vị trí tuyệt vời – Gần biển & trung tâm</h3>
             <div style="text-align: center;">
               <img class="anhthuba" src="https://daivietourist.vn/wp-content/uploads/2025/07/khach-san-da-nang-co-an-buffet-sang-1.jpg" alt="Quy Nhơn biển đẹp">
             </div>
-            <p><strong>&bull;</strong> Được mệnh danh là “Maldives của Việt Nam”, bãi Kỳ Co với làn nước xanh ngọc, bãi cát trắng mịn và những rạn san hô rực rỡ là điểm check-in hàng đầu khi đến Quy Nhơn.</p>
-            <p><strong>&bull;</strong> Kỳ Co nằm cách trung tâm thành phố Quy Nhơn khoảng 25km, thuộc xã Nhơn Lý, là một trong những bãi biển đẹp nhất miền Trung. Với nước biển trong xanh hai màu rõ rệt, cát trắng mịn và những ghềnh đá kỳ vĩ, Kỳ Co được ví như “Maldives của Việt Nam”.</p>
-            <h4><strong>🌊 Điều gì khiến Kỳ Co trở thành điểm đến không thể bỏ lỡ?</strong></h4>
-            <p><strong>&bull; Bãi biển hoang sơ tuyệt đẹp </strong>với màu nước chuyển từ xanh ngọc đến xanh đậm.</p>
-            <p><strong>&bull; Những hồ nước tự nhiên</strong> giữa các ghềnh đá độc đáo.</p>
-            <p><strong>&bull; Thích hợp cho các hoạt động như:</strong> tắm biển, lặn ngắm san hô, chèo kayak, flycam, check-in sống ảo.</p>
-            <p><strong>&bull; Nhiều tour kết hợp Eo Gió – Kỳ Co</strong> trong ngày, có cả đi ca nô hoặc đường bộ</p>
-            <h4><strong>🚤 Cách đi Kỳ Co:</strong></h4>
-            <p><strong>&bull; Từ TP. Quy Nhơn → đến bến Nhơn Lý → đi ca nô ra đảo (15 phút)</strong> hoặc đi đường bộ bằng xe trung chuyển qua đèo Eo Gió (đường mới, đẹp)</p>
-            <p><strong>&bull;</strong> Nên đi từ sáng sớm để tận hưởng trọn vẹn vẻ đẹp trong lành của biển.</p>
+            <p><strong>&bull;</strong> Chỉ vài phút đi bộ đến bãi biển Quy Nhơn.</p>
+            <p><strong>&bull;</strong>  Gần chợ đêm, quảng trường, và khu ẩm thực hải sản.</p>
+            <p><strong>&bull;</strong>  Thuận tiện di chuyển đến các điểm du lịch nổi tiếng như Kỳ Co, Eo Gió, Hòn Khô,…</p>
+        
+            <h3>2. Phòng nghỉ hiện đại – Sang trọng – Sạch sẽ</h3>
+             <div style="text-align: center;">
+              <img class="anhthuba" src="https://kenh14cdn.com/203336854389633024/2021/9/4/photo-1-16307465965921119690780.jpg" alt="Quy Nhơn biển đẹp">
+            </div>
+            <p><strong>&bull;</strong> Phòng rộng rãi, nội thất mới.</p>
+            <p><strong>&bull;</strong> Giường nệm êm ái, máy lạnh, TV thông minh, minibar, Wi-Fi tốc độ cao..</p>
+            <p><strong>&bull;</strong> Nhiều phòng có ban công ngắm biển hoặc view thành phố.</p>
         </section>
       <section class="section-tiennghi" id="tiennghi">
-    <h2>Tiện Nghi & Dịch Vụ Tại Khách Sạn Quy Nhơn</h2>
-
-    <h3>Phòng Nghỉ Hiện Đại – Tiện Nghi Đầy Đủ</h3>
-    <p>
-        Hệ thống phòng nghỉ tại Khách Sạn Quy Nhơn được thiết kế theo phong cách sang trọng và ấm cúng,
-        phù hợp cho gia đình, cặp đôi và khách công tác. Mỗi phòng đều được trang bị:
-    </p>
-    <ul>
-        <li>Giường nệm cao cấp, mềm mại và sạch sẽ</li>
-        <li>Điều hòa 2 chiều hiện đại</li>
-        <li>Smart TV màn hình lớn</li>
-        <li>Wi-Fi tốc độ cao miễn phí</li>
-        <li>Tủ lạnh mini – nước uống miễn phí</li>
-        <li>Phòng tắm riêng với nước nóng 24/7</li>
-        <li>Ban công view biển (tùy loại phòng)</li>
-    </ul>
-
     <h3>Dịch Vụ Cho Kỳ Nghỉ Hoàn Hảo</h3>
     <ul>
+           <div style="text-align: center;">
+              <img class="anhthuba" src="https://deltech.vn/upload/images/laundry-la-gi%20(1).jpg" alt="Quy Nhơn biển đẹp">
+            </div>
         <li>Dọn phòng hằng ngày, đảm bảo không gian luôn sạch sẽ</li>
         <li>Giặt ủi theo yêu cầu</li>
-        <li>Đưa đón sân bay Quy Nhơn</li>
-        <li>Thuê xe máy – xe ô tô thuận tiện khám phá thành phố</li>
-        <li>Đặt tour Kỳ Co, Eo Gió, Hòn Khô trực tiếp tại lễ tân</li>
         <li>Hỗ trợ 24/7 tại quầy lễ tân</li>
     </ul>
 
     <h3>Nhà Hàng & Ẩm Thực</h3>
+            <div style="text-align: center;">
+              <img class="anhthuba" src="https://decoxdesign.com/upload/images/thiet-ke-noi-that-nha-hang-khach-san-02-decox-design.jpg" alt="Quy Nhơn biển đẹp">
+            </div>
     <p>
         Khách sạn có khu vực nhà hàng phục vụ bữa sáng buffet và các món ăn đặc sản Bình Định.
         Không gian rộng rãi, thoáng mát, phù hợp cho gia đình, nhóm bạn và khách công tác.
