@@ -29,7 +29,7 @@
           <a href="Nhom3/TrangChu/mainpage/profile_edit.php" style="color: #e6b478; text-decoration: none;">
           <i class="fa-solid fa-user" style="color: #55abf7;"></i>
           <?= htmlspecialchars($_SESSION['fullname']) ?></span> 
-       <a href="WebKhachSan/Nhom3/TrangChu/main page/logout.php" class="dangxuat">Đăng xuất</a>
+       <a href="Nhom3/TrangChu/mainpage/logout.php" class="dangxuat">Đăng xuất</a>
       <?php else: ?>
         <a href="Nhom3/TrangChu/mainpage/dangky.php" class="dangky"> <i class="fa-solid fa-user" style="color: white;"></i> Đăng ký</a>
         <a href="Nhom3/TrangChu/mainpage/dangnhap.php" class="dangnhap"><i class="fa-solid fa-user" style="color: black;"></i>Đăng nhập</a>
