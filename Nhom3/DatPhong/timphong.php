@@ -1,5 +1,9 @@
 <?php
 session_start();
+if (!isset($_SESSION['id'])) {
+    header("Location: ../TrangChu/mainpage/dangnhap.php");
+    exit;
+}
 ?>
 <!DOCTYPE html>
 <html lang="vi">
@@ -41,7 +45,9 @@ session_start();
                  data-gia="900.000 VNĐ / đêm">
                 <div class="room-header">Số phòng: 101</div>
                 <div class="room-body">
-                    <div class="room-image">Ảnh</div>
+                    <div class="room-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnuq7L3lAt1Ny-a5mwHZeHV1Wor9prUSvwEQ&s" alt="Ảnh phòng">
+                    </div>
                     <div class="room-info">
                         <p><strong>Các dịch vụ:</strong> Ăn sáng miễn phí, Wifi, Hồ bơi</p>
                         <p><strong>Thiết bị trong phòng:</strong> Giường đôi, Máy lạnh, TV, Tủ lạnh nhỏ</p>
@@ -59,7 +65,9 @@ session_start();
                  data-gia="850.000 VNĐ / đêm">
                 <div class="room-header">Số phòng: 102</div>
                 <div class="room-body">
-                    <div class="room-image">Ảnh</div>
+                    <div class="room-image">
+                        <img src="https://images.trvl-media.com/lodging/3000000/2510000/2502700/2502689/72763f28.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill" alt="Ảnh phòng">
+                    </div>
                     <div class="room-info">
                         <p><strong>Các dịch vụ:</strong> Ăn sáng miễn phí, Wifi</p>
                         <p><strong>Thiết bị trong phòng:</strong> 2 Giường đơn, Máy lạnh, TV</p>
@@ -77,7 +85,9 @@ session_start();
                  data-gia="880.000 VNĐ / đêm">
                 <div class="room-header">Số phòng: 103</div>
                 <div class="room-body">
-                    <div class="room-image">Ảnh</div>
+                    <div class="room-image">
+                        <img src="https://thelighthotel.com.vn/wp-content/uploads/2023/11/Tropical-Deluxe-4.jpg" alt="Ảnh phòng">
+                    </div>
                     <div class="room-info">
                         <p><strong>Các dịch vụ:</strong> Ăn sáng, Wifi, Chỗ đậu xe miễn phí</p>
                         <p><strong>Thiết bị trong phòng:</strong> Giường đôi, Máy lạnh, TV, Bàn làm việc</p>
@@ -95,7 +105,9 @@ session_start();
                  data-gia="900.000 VNĐ / đêm">
                 <div class="room-header">Số phòng: 104</div>
                 <div class="room-body">
-                    <div class="room-image">Ảnh</div>
+                    <div class="room-image">
+                        <img src="https://images.trvl-media.com/lodging/3000000/2510000/2502700/2502689/a1e3d078.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill" alt="Ảnh phòng">
+                    </div>
                     <div class="room-info">
                         <p><strong>Các dịch vụ:</strong> Ăn sáng, Wifi, Hồ bơi</p>
                         <p><strong>Thiết bị trong phòng:</strong> 2 Giường đơn, Máy lạnh, TV, Tủ lạnh nhỏ</p>
@@ -114,7 +126,9 @@ session_start();
                  data-gia="1.050.000 VNĐ / đêm">
                 <div class="room-header">Số phòng: 201</div>
                 <div class="room-body">
-                    <div class="room-image">Ảnh</div>
+                    <div class="room-image">
+                        <img src="https://pix10.agoda.net/property/44477834/1203745765/555363e7308ad688b9ed32f2fd79742e.jpeg?ce=2&s=414x232" alt="Ảnh phòng">
+                    </div>
                     <div class="room-info">
                         <p><strong>Các dịch vụ:</strong> Ăn sáng, Spa, Hồ bơi</p>
                         <p><strong>Thiết bị trong phòng:</strong> Giường đôi, Bồn tắm, Máy lạnh, TV</p>
@@ -132,7 +146,9 @@ session_start();
                  data-gia="1.200.000 VNĐ / đêm">
                 <div class="room-header">Số phòng: 202</div>
                 <div class="room-body">
-                    <div class="room-image">Ảnh</div>
+                    <div class="room-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnuq7L3lAt1Ny-a5mwHZeHV1Wor9prUSvwEQ&s" alt="Ảnh phòng">
+                    </div>
                     <div class="room-info">
                         <p><strong>Các dịch vụ:</strong> Ăn sáng, Spa, Đưa đón sân bay</p>
                         <p><strong>Thiết bị trong phòng:</strong> Giường đôi, Bồn tắm, Máy lạnh, TV</p>
@@ -150,7 +166,9 @@ session_start();
                  data-gia="1.250.000 VNĐ / đêm">
                 <div class="room-header">Số phòng: 203</div>
                 <div class="room-body">
-                    <div class="room-image">Ảnh</div>
+                    <div class="room-image">
+                        <img src="https://thelighthotel.com.vn/wp-content/uploads/2023/11/Tropical-Deluxe-4.jpg" alt="Ảnh phòng">
+                    </div>
                     <div class="room-info">
                         <p><strong>Các dịch vụ:</strong> Ăn sáng, Spa, Sauna</p>
                         <p><strong>Thiết bị trong phòng:</strong> Giường đôi, Bồn tắm, Máy lạnh, TV, Sofa</p>
@@ -168,7 +186,9 @@ session_start();
                  data-gia="1.100.000 VNĐ / đêm">
                 <div class="room-header">Số phòng: 204</div>
                 <div class="room-body">
-                    <div class="room-image">Ảnh</div>
+                    <div class="room-image">
+                        <img src="https://images.trvl-media.com/lodging/3000000/2510000/2502700/2502689/72763f28.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill" alt="Ảnh phòng">
+                    </div>
                     <div class="room-info">
                         <p><strong>Các dịch vụ:</strong> Ăn sáng, Hồ bơi, Phòng gym</p>
                         <p><strong>Thiết bị trong phòng:</strong> 2 Giường đơn, Máy lạnh, TV, Bàn làm việc</p>
@@ -187,7 +207,9 @@ session_start();
                  data-gia="1.300.000 VNĐ / đêm">
                 <div class="room-header">Số phòng: 301</div>
                 <div class="room-body">
-                    <div class="room-image">Ảnh</div>
+                    <div class="room-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnuq7L3lAt1Ny-a5mwHZeHV1Wor9prUSvwEQ&s" alt="Ảnh phòng">
+                    </div>
                     <div class="room-info">
                         <p><strong>Các dịch vụ:</strong> Ăn sáng, Wifi, View biển</p>
                         <p><strong>Thiết bị trong phòng:</strong> Giường đôi, Ban công, Máy lạnh, TV</p>
@@ -205,7 +227,9 @@ session_start();
                  data-gia="1.250.000 VNĐ / đêm">
                 <div class="room-header">Số phòng: 302</div>
                 <div class="room-body">
-                    <div class="room-image">Ảnh</div>
+                    <div class="room-image">
+                        <img src="https://images.trvl-media.com/lodging/3000000/2510000/2502700/2502689/a1e3d078.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill" alt="Ảnh phòng">
+                    </div>
                     <div class="room-info">
                         <p><strong>Các dịch vụ:</strong> Ăn sáng, Wifi, View biển</p>
                         <p><strong>Thiết bị trong phòng:</strong> 2 Giường đơn, Ban công, Máy lạnh, TV</p>
@@ -223,7 +247,9 @@ session_start();
                  data-gia="1.400.000 VNĐ / đêm">
                 <div class="room-header">Số phòng: 303</div>
                 <div class="room-body">
-                    <div class="room-image">Ảnh</div>
+                    <div class="room-image">
+                        <img src="https://thelighthotel.com.vn/wp-content/uploads/2023/11/Tropical-Deluxe-4.jpg" alt="Ảnh phòng">
+                    </div>
                     <div class="room-info">
                         <p><strong>Các dịch vụ:</strong> Ăn sáng, Spa, View biển</p>
                         <p><strong>Thiết bị trong phòng:</strong> Giường đôi, Ban công, Bồn tắm, Máy lạnh, TV</p>
@@ -241,7 +267,9 @@ session_start();
                  data-gia="1.350.000 VNĐ / đêm">
                 <div class="room-header">Số phòng: 304</div>
                 <div class="room-body">
-                    <div class="room-image">Ảnh</div>
+                    <div class="room-image">
+                        <img src="https://images.trvl-media.com/lodging/3000000/2510000/2502700/2502689/a1e3d078.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill" alt="Ảnh phòng">
+                    </div>
                     <div class="room-info">
                         <p><strong>Các dịch vụ:</strong> Ăn sáng, Wifi, Hồ bơi, View biển</p>
                         <p><strong>Thiết bị trong phòng:</strong> 2 Giường đơn, Ban công, Máy lạnh, TV</p>
@@ -260,7 +288,9 @@ session_start();
                  data-gia="1.100.000 VNĐ / đêm">
                 <div class="room-header">Số phòng: 401</div>
                 <div class="room-body">
-                    <div class="room-image">Ảnh</div>
+                    <div class="room-image">
+                        <img src="https://thelighthotel.com.vn/wp-content/uploads/2023/11/Tropical-Deluxe-4.jpg" alt="Ảnh phòng">
+                    </div>
                     <div class="room-info">
                         <p><strong>Các dịch vụ:</strong> Ăn sáng, Wifi, Phòng gym</p>
                         <p><strong>Thiết bị trong phòng:</strong> Giường đôi, Máy lạnh, TV, Sofa</p>
@@ -278,7 +308,9 @@ session_start();
                  data-gia="1.200.000 VNĐ / đêm">
                 <div class="room-header">Số phòng: 402</div>
                 <div class="room-body">
-                    <div class="room-image">Ảnh</div>
+                    <div class="room-image">
+                        <img src="https://thelighthotel.com.vn/wp-content/uploads/2023/11/Tropical-Deluxe-4.jpg" alt="Ảnh phòng">
+                    </div>
                     <div class="room-info">
                         <p><strong>Các dịch vụ:</strong> Ăn sáng, Spa, Phòng gym</p>
                         <p><strong>Thiết bị trong phòng:</strong> Giường đôi, Máy lạnh, TV, Bàn làm việc</p>
@@ -296,7 +328,9 @@ session_start();
                  data-gia="1.350.000 VNĐ / đêm">
                 <div class="room-header">Số phòng: 403</div>
                 <div class="room-body">
-                    <div class="room-image">Ảnh</div>
+                    <div class="room-image">
+                        <img src="https://pix10.agoda.net/property/44477834/1203745765/555363e7308ad688b9ed32f2fd79742e.jpeg?ce=2&s=414x232" alt="Ảnh phòng">
+                    </div>
                     <div class="room-info">
                         <p><strong>Các dịch vụ:</strong> Ăn sáng, Spa, Hồ bơi, Phòng gym</p>
                         <p><strong>Thiết bị trong phòng:</strong> Giường đôi, Bồn tắm, Máy lạnh, TV</p>
@@ -314,7 +348,9 @@ session_start();
                  data-gia="1.150.000 VNĐ / đêm">
                 <div class="room-header">Số phòng: 404</div>
                 <div class="room-body">
-                    <div class="room-image">Ảnh</div>
+                    <div class="room-image">
+                        <img src="https://images.trvl-media.com/lodging/3000000/2510000/2502700/2502689/72763f28.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill" alt="Ảnh phòng">
+                    </div>
                     <div class="room-info">
                         <p><strong>Các dịch vụ:</strong> Ăn sáng, Wifi, Phòng gym</p>
                         <p><strong>Thiết bị trong phòng:</strong> 2 Giường đơn, Máy lạnh, TV, Tủ lạnh nhỏ</p>
@@ -333,7 +369,9 @@ session_start();
                  data-gia="1.600.000 VNĐ / đêm">
                 <div class="room-header">Số phòng: 501</div>
                 <div class="room-body">
-                    <div class="room-image">Ảnh</div>
+                    <div class="room-image">
+                        <img src="https://pix10.agoda.net/property/44477834/1203745765/555363e7308ad688b9ed32f2fd79742e.jpeg?ce=2&s=414x232" alt="Ảnh phòng">
+                    </div>
                     <div class="room-info">
                         <p><strong>Các dịch vụ:</strong> Ăn sáng, Wifi, View biển, Spa</p>
                         <p><strong>Thiết bị trong phòng:</strong> Giường đôi, Ban công lớn, Bồn tắm, Máy lạnh, TV</p>
@@ -351,7 +389,9 @@ session_start();
                  data-gia="1.500.000 VNĐ / đêm">
                 <div class="room-header">Số phòng: 502</div>
                 <div class="room-body">
-                    <div class="room-image">Ảnh</div>
+                    <div class="room-image">
+                        <img src="https://images.trvl-media.com/lodging/3000000/2510000/2502700/2502689/72763f28.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill" alt="Ảnh phòng">
+                    </div>
                     <div class="room-info">
                         <p><strong>Các dịch vụ:</strong> Ăn sáng, Wifi, View biển, Hồ bơi</p>
                         <p><strong>Thiết bị trong phòng:</strong> 2 Giường đơn, Ban công, Máy lạnh, TV</p>
@@ -369,7 +409,9 @@ session_start();
                  data-gia="1.700.000 VNĐ / đêm">
                 <div class="room-header">Số phòng: 503</div>
                 <div class="room-body">
-                    <div class="room-image">Ảnh</div>
+                    <div class="room-image">
+                        <img src="https://pix10.agoda.net/property/44477834/1203745765/555363e7308ad688b9ed32f2fd79742e.jpeg?ce=2&s=414x232" alt="Ảnh phòng">
+                    </div>
                     <div class="room-info">
                         <p><strong>Các dịch vụ:</strong> Ăn sáng, Wifi, View biển, Spa, Phòng gym</p>
                         <p><strong>Thiết bị trong phòng:</strong> Giường đôi, Ban công, Bồn tắm, Máy lạnh, TV, Sofa</p>
@@ -387,7 +429,9 @@ session_start();
                  data-gia="1.550.000 VNĐ / đêm">
                 <div class="room-header">Số phòng: 504</div>
                 <div class="room-body">
-                    <div class="room-image">Ảnh</div>
+                    <div class="room-image">
+                        <img src="https://images.trvl-media.com/lodging/3000000/2510000/2502700/2502689/a1e3d078.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill" alt="Ảnh phòng">
+                    </div>
                     <div class="room-info">
                         <p><strong>Các dịch vụ:</strong> Ăn sáng, Wifi, View biển</p>
                         <p><strong>Thiết bị trong phòng:</strong> 2 Giường đơn, Ban công, Máy lạnh, TV</p>

@@ -1,8 +1,18 @@
 <?php
+session_start();
 require __DIR__ . '/connect.php';
 
-$sql    = "SELECT * FROM datphong ORDER BY id DESC";
-$result = $conn->query($sql);
+if (!isset($_SESSION['id'])) {
+    header("Location: ../TrangChu/mainpage/dangnhap.php");
+    exit;
+}
+
+$user_id = $_SESSION['id']; 
+
+$stmt = $conn->prepare("SELECT * FROM datphong WHERE user_id = ? ORDER BY id DESC");
+$stmt->bind_param("i", $user_id);
+$stmt->execute();
+$result = $stmt->get_result();
 ?>
 <!DOCTYPE html>
 <html lang="vi">

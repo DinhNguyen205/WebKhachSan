@@ -2,6 +2,13 @@
 session_start();
 require __DIR__ . '/connect.php';
 
+if (!isset($_SESSION['id'])) {
+    header("Location: dangnhap.php");
+    exit;
+}
+
+$user_id = $_SESSION['id'];
+
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     header("Location: timphong.php");
     exit;
@@ -29,10 +36,10 @@ if (!empty($errors)) {
 
 // Lưu vào DB
 $stmt = $conn->prepare("
-    INSERT INTO datphong (ten, sodienthoai, ngaydat, sophong, dichvu, songuoi, choxacnhan)
-    VALUES (?, ?, ?, ?, ?, ?, 0)
+    INSERT INTO datphong (ten, sodienthoai, ngaydat, sophong, dichvu, songuoi, choxacnhan, user_id)
+    VALUES (?, ?, ?, ?, ?, ?, 0, ?)
 ");
-$stmt->bind_param("sssisi", $ten, $sodienthoai, $ngaydat, $sophong, $dichvu, $songuoi);
+$stmt->bind_param("sssisii", $ten, $sodienthoai, $ngaydat, $sophong, $dichvu, $songuoi, $user_id);
 
 if ($stmt->execute()) {
     $_SESSION['thong_bao'] = "Đặt phòng thành công! Cảm ơn bạn đã lựa chọn Khách Sạn Quy Nhơn.";

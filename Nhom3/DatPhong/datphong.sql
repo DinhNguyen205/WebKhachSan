@@ -14,5 +14,6 @@ CREATE TABLE IF NOT EXISTS datphong (
     dichvu VARCHAR(255),
     songuoi INT NOT NULL,
     choxacnhan TINYINT(1) DEFAULT 0,
+    user_id INT NOT NULL,
     thoigian_dat TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
