@@ -31,6 +31,13 @@
             return false;
         }
 
+        
+        if (/\s/.test(pass)) {
+            alert("Mật khẩu không được chứa khoảng trắng!");
+            return false;
+        }
+
+
         if (pass.length < 8) {
             alert("Mật khẩu phải có ít nhất 8 ký tự!");
             return false;
