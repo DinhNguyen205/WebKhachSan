@@ -20,6 +20,7 @@ require '../connect/connect.php';
 
             if ($stmt->rowCount() > 0) {
             echo "Tên người dùng đã tồn tại.";
+            exit;
             } else {
             $stmt = $conn->prepare("INSERT INTO nguoidung (username, password, email) VALUES (?, ?,?)");
             $stmt->execute([$username, $hashedPassword,$email]);
