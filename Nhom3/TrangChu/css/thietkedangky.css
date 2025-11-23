@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://cdn2.vietnambooking.com/wp-content/uploads/hotel_pro/hotel_313325/142b30f83073c437d047224891a1e8bc.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+@keyframes slideDown {
+0% {
+    transform: translateY(-100px);
+    opacity: 0;
+}
+100% {
+    transform: translateY(0);
+    opacity: 1;
+    }
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    width: 300px;
+    text-align: center;
+            
+animation: slideDown 0.8s ease forwards; 
+}
+h2 {
+    margin-bottom: 20px;
+    color: darkorange;
+}
+input[type="text"], input[type="password"], input[type="email"]{
+    width: 100%;
+    font-weight: bold;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    width: 100%;
+    background-color:rgb(21, 160, 172);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #45a049;
+}
