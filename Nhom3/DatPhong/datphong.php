@@ -1,6 +1,11 @@
 <?php
 require __DIR__ . '/conect/connect.php';
 
+if (!isset($_SESSION['username'])) {
+    echo "Bạn chưa đăng nhập.";
+    exit;
+}
+
 $errors = [];
 $thong_bao = "";
 
