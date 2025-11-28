@@ -81,6 +81,17 @@ $result = $stmt->get_result();
                                 <?php endif; ?>
                             </td>
                             <td><?= htmlspecialchars($row['thoigian_dat']) ?></td>
+                            <td>
+                                <?php if ($row['choxacnhan'] == 0): ?>
+                                    <a href="huydatphong.php?id=<?=  $row['id'] ?>"
+                                    onclick="return confirm('Bạn có chắc muốn hủy đặt phòng ?');"
+                                    style="color:red; font-weight:600;">
+                                    Hủy
+                                    </a>
+                                <?php else: ?>
+                                    <span style="color:#999;">Không thể hủy</span>
+                                <?php endif; ?>
+                            </td>
                         </tr>
                     <?php endwhile; ?>
                 </table>
