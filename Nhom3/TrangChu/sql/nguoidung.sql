@@ -5,5 +5,6 @@ CREATE TABLE nguoidung (
     email VARCHAR(100),
     fullname VARCHAR(100),
     dob DATE,
-    gioitinh VARCHAR(10) NOT NULL
+    gioitinh VARCHAR(10) NOT NULL,
+    role VARCHAR(20) NOT NULL DEFAULT 'khachhang'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

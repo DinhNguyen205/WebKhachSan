@@ -28,8 +28,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['id'] = $user['id']; 
             $_SESSION['username'] = $user['username'];
             $_SESSION['fullname'] = $user['fullname'];
-            header("Location: ../../../index.php");
-            exit;
+            $_SESSION['role']     = $user['role'];
+
+            if ($user['role'] === 'nhanvien') {
+                // Nhân viên
+                header("Location: ../../../trangchunhanvien.php");
+                exit;
+            } else {
+                // Khách hàng (role = khachhang)
+                header("Location: ../../../index.php");
+                exit;
+            }
         } else {
             echo "Sai tên đăng nhập hoặc mật khẩu.";
         }
