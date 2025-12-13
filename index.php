@@ -167,7 +167,7 @@
    
 <footer id="lienhe">
   <p>Liên hệ: Nhom3@gmail.com | SĐT: 0812301905</p>
-  <p>&copy; 2025 Khách Sạn Quy Nhơn. Thiết kế bởi Nhóm 3.</p>
+  <p>&copy; 2025 Khách Sạn Quy Nhơn. Thiết kế bởi Nhóm 3 Thực hành nhóm.</p>
 </footer>
 
 </body>
