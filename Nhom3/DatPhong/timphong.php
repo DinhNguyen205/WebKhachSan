@@ -468,9 +468,14 @@ if (!isset($_SESSION['id'])) {
             </div>
 
             <div class="form-group">
-                <label>Số điện thoại:</label>
-                <input type="text" name="sodienthoai" required>
-            </div>
+				<label>Số điện thoại:</label>
+				<input type="text"
+					name="sodienthoai"
+					required
+					pattern="0[0-9]{9}"
+					title="Số điện thoại phải đủ 10 chữ số và bắt đầu bằng 0">
+</div>
+
 
             <div class="form-group">
                 <label>Số lượng (phòng):</label>
@@ -499,6 +504,17 @@ if (!isset($_SESSION['id'])) {
                 <button type="button" id="btnCloseModal" class="btn-cancel">Hủy</button>
                 <button type="submit" class="btn-submit">Đặt</button>
             </div>
+
+			<label>Ngày nhận phòng</label>
+				<input type="date"
+					name="ngaydat"
+					required
+					min="<?= date('Y-m-d') ?>">
+
+			<label>Ngày trả phòng</label>
+				<input type="date"
+					name="ngaytra"
+					required>
         </form>
     </div>
 </div>
@@ -531,6 +547,14 @@ document.getElementById('modalOverlay').addEventListener('click', function (e) {
         this.style.display = 'none';
     }
 });
+		const ngayNhan = document.querySelector('input[name="ngaydat"]');
+		const ngayTra  = document.querySelector('input[name="ngaytra"]');
+
+	if (ngayNhan && ngayTra) {
+		ngayNhan.addEventListener('change', function () {
+			ngayTra.min = this.value; // ngày trả >= ngày nhận
+    });
+}
 </script>
 
 </body>

@@ -18,15 +18,34 @@ $ten         = trim($_POST['ten'] ?? '');
 $sodienthoai = trim($_POST['sodienthoai'] ?? '');
 $songuoi     = (int)($_POST['songuoi'] ?? 1);
 $ngaydat     = $_POST['ngaydat'] ?? '';
+$ngaytra     = $_POST['ngaytra'] ?? '';
 $dichvu      = trim($_POST['dichvu'] ?? '');
-$sophong     = trim($_POST['sophong'] ?? '');
+$sophong     = (int)($_POST['sophong'] ?? 0);
 
 $errors = [];
-
+if (!preg_match('/^0[0-9]{9}$/', $sodienthoai)) 
+    $errors[] = "Số điện thoại không hợp lệ (phải đủ 10 chữ số, bắt đầu bằng 0).";
+;
 if ($ten === '')         $errors[] = "Vui lòng nhập họ và tên.";
 if ($sodienthoai === '') $errors[] = "Vui lòng nhập số điện thoại.";
 if ($ngaydat === '')     $errors[] = "Vui lòng chọn ngày nhận phòng.";
-if ($sophong === '')     $errors[] = "Thiếu thông tin số phòng.";
+if ($sophong === 0)      $errors[] = "Thiếu thông tin số phòng.";
+
+$today = date('Y-m-d');
+if ($ngaydat < $today) {
+    $errors[] = "Ngày nhận phòng không được nhỏ hơn ngày hiện tại.";
+}
+$today = date("Y-m-d");
+
+if ($ngaydat < $today) {
+    $errors[] = "Ngày nhận phòng không được nhỏ hơn ngày hiện tại.";
+}
+
+if ($ngaytra === '') {
+    $errors[] = "Vui lòng chọn ngày trả phòng.";
+} elseif ($ngaytra <= $ngaydat) {
+    $errors[] = "Ngày trả phòng phải sau ngày nhận phòng.";
+}
 
 if (!empty($errors)) {
     $_SESSION['thong_bao'] = implode(" ", $errors);
@@ -34,12 +53,44 @@ if (!empty($errors)) {
     exit;
 }
 
-// Lưu vào DB
+$sql = "SELECT songuoi_toida FROM phong WHERE sophong = ?";
+$stmt_check = $conn->prepare($sql);
+$stmt_check->bind_param("i", $sophong);
+$stmt_check->execute();
+$result = $stmt_check->get_result();
+
+if ($result->num_rows === 0) {
+    $_SESSION['thong_bao'] = "Phòng không tồn tại.";
+    header("Location: timphong.php");
+    exit;
+}
+
+$row = $result->fetch_assoc();
+$songuoi_toida = (int)$row['songuoi_toida'];
+
+if ($songuoi > $songuoi_toida) {
+    $_SESSION['thong_bao'] =
+        "Số người vượt quá quy định của phòng (tối đa $songuoi_toida người).";
+    header("Location: timphong.php");
+    exit;
+}
+
+$stmt_check->close();
+
 $stmt = $conn->prepare("
     INSERT INTO datphong (ten, sodienthoai, ngaydat, sophong, dichvu, songuoi, choxacnhan, user_id)
     VALUES (?, ?, ?, ?, ?, ?, 0, ?)
 ");
-$stmt->bind_param("sssisii", $ten, $sodienthoai, $ngaydat, $sophong, $dichvu, $songuoi, $user_id);
+$stmt->bind_param(
+    "sssisii",
+    $ten,
+    $sodienthoai,
+    $ngaydat,
+    $sophong,
+    $dichvu,
+    $songuoi,
+    $user_id
+);
 
 if ($stmt->execute()) {
     $_SESSION['thong_bao'] = "Đặt phòng thành công! Cảm ơn bạn đã lựa chọn Khách Sạn Quy Nhơn.";

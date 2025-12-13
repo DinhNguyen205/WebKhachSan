@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 13, 2025 lúc 05:15 PM
+-- Thời gian đã tạo: Th12 13, 2025 lúc 05:14 PM
 -- Phiên bản máy phục vụ: 10.4.32-MariaDB
 -- Phiên bản PHP: 8.1.25
 
@@ -24,41 +24,50 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `datphong`
+-- Cấu trúc bảng cho bảng `phong`
 --
 
-CREATE TABLE `datphong` (
-  `id` int(11) NOT NULL,
-  `ten` varchar(100) NOT NULL,
-  `sodienthoai` varchar(20) NOT NULL,
-  `ngaydat` date NOT NULL,
+CREATE TABLE `phong` (
   `sophong` int(11) NOT NULL,
-  `dichvu` varchar(255) DEFAULT NULL,
-  `songuoi` int(11) NOT NULL,
-  `choxacnhan` tinyint(1) DEFAULT 0,
-  `user_id` int(11) NOT NULL,
-  `thoigian_dat` timestamp NOT NULL DEFAULT current_timestamp()
+  `loaiphong` varchar(50) DEFAULT NULL,
+  `songuoi_toida` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `phong`
+--
+
+INSERT INTO `phong` (`sophong`, `loaiphong`, `songuoi_toida`) VALUES
+(101, 'Phòng đơn', 2),
+(102, 'Phòng đôi', 4),
+(103, 'Phòng đơn', 2),
+(104, 'Phòng đôi', 4),
+(201, 'VIP', 6),
+(202, 'VIP', 6),
+(203, 'VIP', 6),
+(204, 'Phòng đôi', 4),
+(301, 'View biển', 2),
+(302, 'View biển', 4),
+(303, 'View biển', 2),
+(304, 'View biển', 4),
+(401, 'Phòng đơn', 2),
+(402, 'VIP', 2),
+(403, 'VIP', 2),
+(404, 'Phòng đôi', 4),
+(501, 'VIP', 2),
+(502, 'View biển', 4),
+(503, 'VIP', 2),
+(504, 'View biển', 4);
 
 --
 -- Chỉ mục cho các bảng đã đổ
 --
 
 --
--- Chỉ mục cho bảng `datphong`
+-- Chỉ mục cho bảng `phong`
 --
-ALTER TABLE `datphong`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT cho các bảng đã đổ
---
-
---
--- AUTO_INCREMENT cho bảng `datphong`
---
-ALTER TABLE `datphong`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+ALTER TABLE `phong`
+  ADD PRIMARY KEY (`sophong`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
