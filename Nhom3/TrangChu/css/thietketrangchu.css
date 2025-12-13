@@ -1,0 +1,180 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: white;
+  color: #333;
+}
+
+.logo strong{
+    font-family: 'Bebas Neue', sans-serif; 
+    font-size: 2.5em;
+    color: #e6b478;
+    letter-spacing: 2px;
+    text-transform: uppercase; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); 
+}
+
+header {
+  position: fixed;           /* Cố định header ở đầu trang */
+  top: 0;                    /* Cách đỉnh trình duyệt 0px */
+  left: 0;      
+  width: 97%;                /* Chiếm toàn bộ chiều rộng */
+  z-index: 999;
+  border-bottom: 1px solid #dddddd;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+header nav a {
+   margin: 0 10px;
+   text-decoration: none;
+   color: #333;
+   font-weight: bold;
+   padding: 8px 12px;
+   border-radius: 8px;
+   transition: background-color 0.2s;
+}
+
+header nav a:hover {
+   background-color: #f0f0f0; 
+}
+
+.auth-buttons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    margin-left: 10px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.2s;
+}
+
+.auth-buttons .dangnhap {
+    background-color: white;
+    color: #000;
+    border: 2px solid #007bff;
+}
+
+.auth-buttons .dangnhap .icon {
+    margin-right: 6px;
+}
+
+.auth-buttons .dangnhap:hover {
+    background-color: #e6f0ff;
+}
+
+.auth-buttons .dangky {
+    background-color: #009bff;
+    color: white;
+}
+
+.auth-buttons .dangky:hover {
+    background-color: #007bce;
+}
+
+.auth-buttons .dangxuat{
+    background-color: #ff1f1f;
+    color: white;
+}
+.auth-buttons .dangxuat:hover {
+    background-color: #d82020;
+}
+
+
+.container {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.content {
+  flex: 3;
+  padding-right: 40px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #f1be51;
+}
+
+
+img.anhdautien {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+img.anhthuhai {
+  max-width: 70%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+img.anhthuba {
+  max-width: 80%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.sidebar {
+  flex: 1;
+  padding-left: 20px;
+  position: sticky;
+  top: 100px;
+  align-self: flex-start;
+}
+
+.sidebar-box {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.sidebar-box h3 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.sidebar-box ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.sidebar-box ul li a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.sidebar-box ul li a:hover {
+  text-decoration: underline;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
