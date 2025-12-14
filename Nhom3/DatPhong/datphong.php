@@ -20,7 +20,8 @@ $songuoi     = (int)($_POST['songuoi'] ?? 1);
 $ngaydat     = $_POST['ngaydat'] ?? '';
 $ngaytra     = $_POST['ngaytra'] ?? '';
 $dichvu      = trim($_POST['dichvu'] ?? '');
-$sophong     = (int)($_POST['sophong'] ?? 0);
+$sophong = (int)($_POST['sophong'] ?? 0);
+
 
 $errors = [];
 if (!preg_match('/^0[0-9]{9}$/', $sodienthoai)) 
@@ -29,7 +30,6 @@ if (!preg_match('/^0[0-9]{9}$/', $sodienthoai))
 if ($ten === '')         $errors[] = "Vui lòng nhập họ và tên.";
 if ($sodienthoai === '') $errors[] = "Vui lòng nhập số điện thoại.";
 if ($ngaydat === '')     $errors[] = "Vui lòng chọn ngày nhận phòng.";
-if ($sophong === 0)      $errors[] = "Thiếu thông tin số phòng.";
 
 $today = date('Y-m-d');
 if ($ngaydat < $today) {
@@ -53,39 +53,18 @@ if (!empty($errors)) {
     exit;
 }
 
-$sql = "SELECT songuoi_toida FROM phong WHERE sophong = ?";
-$stmt_check = $conn->prepare($sql);
-$stmt_check->bind_param("i", $sophong);
-$stmt_check->execute();
-$result = $stmt_check->get_result();
-
-if ($result->num_rows === 0) {
-    $_SESSION['thong_bao'] = "Phòng không tồn tại.";
-    header("Location: timphong.php");
-    exit;
-}
-
-$row = $result->fetch_assoc();
-$songuoi_toida = (int)$row['songuoi_toida'];
-
-if ($songuoi > $songuoi_toida) {
-    $_SESSION['thong_bao'] =
-        "Số người vượt quá quy định của phòng (tối đa $songuoi_toida người).";
-    header("Location: timphong.php");
-    exit;
-}
-
-$stmt_check->close();
-
 $stmt = $conn->prepare("
-    INSERT INTO datphong (ten, sodienthoai, ngaydat, sophong, dichvu, songuoi, choxacnhan, user_id)
-    VALUES (?, ?, ?, ?, ?, ?, 0, ?)
+    INSERT INTO datphong 
+    (ten, sodienthoai, ngaydat, ngaytra, sophong, dichvu, songuoi, choxacnhan, user_id)
+    VALUES (?, ?, ?, ?, ?, ?, ?, 0, ?)
 ");
+
 $stmt->bind_param(
-    "sssisii",
+    "ssssisii",
     $ten,
     $sodienthoai,
     $ngaydat,
+    $ngaytra,
     $sophong,
     $dichvu,
     $songuoi,

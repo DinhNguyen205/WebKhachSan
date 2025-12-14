@@ -20,6 +20,7 @@ if (!isset($_SESSION['id'])) {
     <header class="header">
         <div class="hotel-name">Khách Sạn Quy Nhơn</div>
         <a href="lichsu_datphong.php" class="btn-history">Lịch sử đặt phòng</a>
+        <a href="../../index.php" class="btn-index">Quay về trang chủ</a>
     </header>
 
     <!-- NỘI DUNG CHÍNH -->
@@ -469,22 +470,39 @@ if (!isset($_SESSION['id'])) {
 
             <div class="form-group">
 				<label>Số điện thoại:</label>
-				<input type="text"
-					name="sodienthoai"
-					required
-					pattern="0[0-9]{9}"
-					title="Số điện thoại phải đủ 10 chữ số và bắt đầu bằng 0">
+				<input type="tel"
+                    name="sodienthoai"
+                    maxlength="10"
+                    required
+                    pattern="[0-9]{10}"
+                    title="Số điện thoại phải đúng 10 chữ số"
+                    oninput="this.value=this.value.replace(/[^0-9]/g,'').slice(0,10);">
+
 </div>
 
 
             <div class="form-group">
-                <label>Số lượng (phòng):</label>
-                <input type="number" name="songuoi" min="1" value="1" required>
+                <label>Số người:</label>
+                <input type="number"
+                    name="songuoi"
+                    min="1"
+                    max="4"
+                    value="1"
+                    required>
             </div>
 
             <div class="form-group">
-                <label>Thời gian (ngày nhận phòng):</label>
-                <input type="date" name="ngaydat" required>
+                <label>Ngày nhận phòng</label>
+                <input type="date"
+                    name="ngaydat"
+                    required
+                    min="<?= date('Y-m-d') ?>">
+
+                <label>Ngày trả phòng</label>
+                <input type="date"
+                    name="ngaytra"
+                    required>
+
             </div>
 
             <div class="form-group">
@@ -505,16 +523,7 @@ if (!isset($_SESSION['id'])) {
                 <button type="submit" class="btn-submit">Đặt</button>
             </div>
 
-			<label>Ngày nhận phòng</label>
-				<input type="date"
-					name="ngaydat"
-					required
-					min="<?= date('Y-m-d') ?>">
-
-			<label>Ngày trả phòng</label>
-				<input type="date"
-					name="ngaytra"
-					required>
+			
         </form>
     </div>
 </div>
