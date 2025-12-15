@@ -8,7 +8,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="Khách Sạn Quy Nhơn Và Dịch Vụ Của Khách Sạn.">
-  <title>Khám Phá Du Lịch Quy Nhơn</title>
+  <title>Khách Sạn Quy Nhơn</title>
   <link rel="stylesheet" href="Nhom3/TrangChu/css/thietketrangchu.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
