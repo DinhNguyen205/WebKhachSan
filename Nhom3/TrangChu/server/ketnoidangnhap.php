@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 exit;
             }
         } else {
-            echo "Sai tên đăng nhập hoặc mật khẩu.";
+            echo "Sai tên đăng nhập hoặc sai mật khẩu.";
         }
     } catch (PDOException $e) {
         echo "Lỗi: " . $e->getMessage();
