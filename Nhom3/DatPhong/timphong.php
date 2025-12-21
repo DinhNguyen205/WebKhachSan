@@ -20,6 +20,7 @@ if (!isset($_SESSION['id'])) {
     <header class="header">
         <div class="hotel-name">Khách Sạn Quy Nhơn</div>
         <a href="lichsu_datphong.php" class="btn-history">Lịch sử đặt phòng</a>
+        <a href="../../index.php" class="btn-index">Quay về trang chủ</a>
     </header>
 
     <!-- NỘI DUNG CHÍNH -->
@@ -468,18 +469,40 @@ if (!isset($_SESSION['id'])) {
             </div>
 
             <div class="form-group">
-                <label>Số điện thoại:</label>
-                <input type="text" name="sodienthoai" required>
+				<label>Số điện thoại:</label>
+				<input type="tel"
+                    name="sodienthoai"
+                    maxlength="10"
+                    required
+                    pattern="[0-9]{10}"
+                    title="Số điện thoại phải đúng 10 chữ số"
+                    oninput="this.value=this.value.replace(/[^0-9]/g,'').slice(0,10);">
+
+</div>
+
+
+            <div class="form-group">
+                <label>Số người:</label>
+                <input type="number"
+                    name="songuoi"
+                    min="1"
+                    max="4"
+                    value="1"
+                    required>
             </div>
 
             <div class="form-group">
-                <label>Số lượng (phòng):</label>
-                <input type="number" name="songuoi" min="1" value="1" required>
-            </div>
+                <label>Ngày nhận phòng</label>
+                <input type="date"
+                    name="ngaydat"
+                    required
+                    min="<?= date('Y-m-d') ?>">
 
-            <div class="form-group">
-                <label>Thời gian (ngày nhận phòng):</label>
-                <input type="date" name="ngaydat" required>
+                <label>Ngày trả phòng</label>
+                <input type="date"
+                    name="ngaytra"
+                    required>
+
             </div>
 
             <div class="form-group">
@@ -499,6 +522,8 @@ if (!isset($_SESSION['id'])) {
                 <button type="button" id="btnCloseModal" class="btn-cancel">Hủy</button>
                 <button type="submit" class="btn-submit">Đặt</button>
             </div>
+
+			
         </form>
     </div>
 </div>
@@ -531,6 +556,14 @@ document.getElementById('modalOverlay').addEventListener('click', function (e) {
         this.style.display = 'none';
     }
 });
+		const ngayNhan = document.querySelector('input[name="ngaydat"]');
+		const ngayTra  = document.querySelector('input[name="ngaytra"]');
+
+	if (ngayNhan && ngayTra) {
+		ngayNhan.addEventListener('change', function () {
+			ngayTra.min = this.value; // ngày trả >= ngày nhận
+    });
+}
 </script>
 
 </body>
