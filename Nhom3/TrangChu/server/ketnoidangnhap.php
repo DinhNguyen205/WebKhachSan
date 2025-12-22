@@ -41,6 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['username'] = $user['username'];
             $_SESSION['role']     = $user['role'];
             $_SESSION['employee_id']     = $user['employee_id'];
+
             $_SESSION['employee_name'] = $user['employee_name'] ?? '';
             $_SESSION['employee_position'] = $user['employee_position'] ?? '';
             if ($user['role'] === 'nhanvien') {
@@ -53,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 exit;
             }
         } else {
-            echo "Sai tên đăng nhập hoặc sai mật khẩu.";
+            echo "Sai tên đăng nhập hoặc mật khẩu.";
         }
     } catch (PDOException $e) {
         echo "Lỗi: " . $e->getMessage();
