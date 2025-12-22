@@ -51,11 +51,11 @@ try {
             <div class="filter-group">
                 <label for="room-status">Trạng thái:</label>
                 <select id="room-status">
-                    <option value="all">Tất cả</option>
-                    <option value="có sẵn">Có sẵn</option>
-                    <option value="đang sử dụng">Đang sử dụng</option>
-                    <option value="dọn dẹp">Đang dọn</option>
-                    <option value="bảo trì">Bảo trì</option>
+                    <option value="All">Tất cả</option>
+                    <option value="Có sẵn">Có sẵn</option>
+                    <option value="Đang sử dụng">Đang sử dụng</option>
+                    <option value="Dọn dẹp">Đang dọn</option>
+                    <option value="Bảo trì">Bảo trì</option>
                 </select>
             </div>
 
@@ -108,10 +108,10 @@ try {
         <p>Phòng: <strong id="modalRoomNumber"></strong></p>
 
         <select id="newStatusSelect">
-            <option value="có sẵn">Có sẵn</option>
-            <option value="đang sử dụng">Đang sử dụng</option>
-            <option value="dọn dẹp">Đang dọn</option>
-            <option value="bảo trì">Bảo trì</option>
+            <option value="Có sẵn">Có sẵn</option>
+            <option value="Đang sử dụng">Đang sử dụng</option>
+            <option value="Dọn dẹp">Đang dọn</option>
+            <option value="Bảo trì">Bảo trì</option>
         </select>
 
         <button id="saveStatusBtn" class="add-room-btn" style="width:100%;margin-top:15px;">Lưu</button>

@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
 
         echo json_encode(['success' => true, 'message' => "Đã cập nhật trạng thái phòng $so_phong thành $trang_thai"]);
     } catch (PDOException $e) {
-        echo json_encode(['success' => false, 'message' => "Lỗi CSDL khi cập nhật: " . $e->getMessage()]);
+        echo json_encode(['success' => false, 'message' => "Lỗi khi cập nhật: " . $e->getMessage()]);
     }
     exit; 
 }
