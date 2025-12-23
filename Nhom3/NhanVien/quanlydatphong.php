@@ -79,7 +79,7 @@ button { padding: 5px 10px; cursor: pointer; }
 <tr>
     <th>ID</th>
     <th>Khách</th>
-    <th>SĐT</th>
+    <th>Số Điện Thoại</th>
     <th>Ngày nhận</th>
     <th>Phòng</th>
     <th>Số người</th>
