@@ -128,7 +128,6 @@ try {
             <a href="quanlydatphong.php">📘 Quản lý đặt phòng</a>
             <a href="quanlyphong.php" class="active">🏨 Quản lý phòng</a>
             <a href="quanlykhachhang.php">👥 Quản lý khách hàng</a>
-            <a href="calamviec.php">📅 Ca làm việc</a>
             <a href="#">👤 Thông tin nhân viên</a>
         </nav>
     </aside>

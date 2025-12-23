@@ -1,0 +1,312 @@
+/* ======================
+   RESET & BASE
+====================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Serif Display", sans-serif;
+}
+
+body {
+    background: #e6f7ff;
+    color: #053B50;
+}
+
+/* ======================
+   HEADER
+====================== */
+header {
+    background: linear-gradient(135deg, #0284c7, #0ea5e9);
+    color: white;
+    padding: 20px 32px;
+    font-size: 22px;
+    font-weight: bold;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+/* ======================
+   LAYOUT
+====================== */
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 260px;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #0284c7, #0891b2);
+    color: white;
+    padding: 28px 22px;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid #e0f7ff;
+    margin-bottom: 12px;
+}
+
+.menu a {
+    display: block;
+    padding: 14px 15px;
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.15);
+    transition: 0.2s;
+}
+
+.menu a:hover,
+.menu a.active {
+    background: rgba(255,255,255,0.25);
+}
+
+/* ======================
+   MAIN CONTENT
+====================== */
+.content {
+    flex: 1;
+    padding: 35px;
+}
+
+.content h1 {
+    font-size: 28px;
+    color: #0369a1;
+    margin-bottom: 30px;
+}
+
+/* ======================
+   ERROR MESSAGE
+====================== */
+.error-message {
+    background: #fee2e2;
+    color: #991b1b;
+    padding: 14px 18px;
+    border-radius: 10px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ======================
+   INFO CARD – LAYOUT 2 CỘT
+====================== */
+.info-card {
+    background: white;
+    border-radius: 18px;
+    padding: 30px;
+    max-width: 900px;
+    box-shadow: 0 10px 30px rgba(0, 100, 150, 0.15);
+    border: 1px solid #bae6fd;
+}
+
+/* khung chia trái – phải */
+.info-card {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    column-gap: 30px;
+}
+
+/* ======================
+   BÊN TRÁI – AVATAR
+====================== */
+.info-header {
+    text-align: center;
+    border-right: 2px solid #e0f2fe;
+    padding-right: 20px;
+}
+
+.info-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0284c7, #0ea5e9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 14px;
+    color: white;
+    font-size: 40px;
+}
+
+.info-header h3 {
+    font-size: 20px;
+    color: #0369a1;
+    margin-bottom: 6px;
+}
+
+/* ======================
+   BÊN PHẢI – THÔNG TIN
+====================== */
+.info-details h2 {
+    font-size: 20px;
+    color: #0284c7;
+    margin-bottom: 18px;
+}
+
+/* từng dòng info */
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px;
+    margin-bottom: 12px;
+    background: #f0faff;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.detail-item i {
+    color: #0284c7;
+    min-width: 22px;
+    font-size: 16px;
+}
+
+.detail-item strong {
+    min-width: 120px;
+    color: #0369a1;
+}
+
+/* ======================
+   NÚT CẬP NHẬT – PHÍA DƯỚI
+====================== */
+.detail-item:last-child {
+    background: transparent;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.detail-item .action-btn {
+    margin-left: auto;
+    padding: 12px 22px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #0284c7, #0ea5e9);
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.detail-item .action-btn:hover {
+    opacity: 0.9;
+}
+
+
+/* ======================
+   ACTION BUTTON
+====================== */
+.action-btn {
+    background: linear-gradient(135deg, #0284c7, #0ea5e9);
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.2s;
+}
+
+.action-btn:hover {
+    opacity: 0.9;
+}
+
+/* ======================
+   MODAL (GIỮ FORM CHUNG)
+====================== */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+    z-index: 999;
+}
+
+.modal-content {
+    background: white;
+    width: 420px;
+    margin: 100px auto;
+    padding: 26px 28px;
+    border-radius: 16px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.2);
+}
+
+.modal-content h2 {
+    font-size: 22px;
+    color: #0369a1;
+    margin-bottom: 18px;
+    border-bottom: 2px solid #dbeafe;
+    padding-bottom: 8px;
+}
+
+.close-btn {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+    color: #6b7280;
+}
+
+.close-btn:hover {
+    color: #ef4444;
+}
+
+/* ======================
+   FORM
+====================== */
+.form-group label {
+    font-weight: 600;
+    color: #0369a1;
+    display: block;
+    margin-top: 10px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    background: #f8fafc;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #0284c7;
+    background: white;
+}
+
+.save-btn {
+    margin-top: 18px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #0284c7, #0ea5e9);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.save-btn:hover {
+    opacity: 0.9;
+}
+
+/* CĂN GIỮA DUY NHẤT CARD */
+.info-card {
+    margin-left: auto;
+    margin-right: auto;
+}

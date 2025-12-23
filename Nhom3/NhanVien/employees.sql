@@ -35,7 +35,7 @@ CREATE TABLE `employees` (
   `email` varchar(100) DEFAULT NULL COMMENT 'Email nhân viên',
   `salary` decimal(10,2) NOT NULL DEFAULT 0.00 COMMENT 'Mức lương cơ bản',
   `hired_date` date DEFAULT NULL COMMENT 'Ngày vào làm'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Indexes for dumped tables
