@@ -100,7 +100,20 @@ $result = $conn->query("SELECT * FROM datphong WHERE ten_kh LIKE '%$keyword%' OR
     <?php } ?>
 </form>
 
-<hr>
+<!-- ================= DANH SÁCH ================= -->
+<table>
+<tr>
+    <th>ID</th>
+    <th>Tên Khách Hàng</th>
+    <th>Số Điện Thoại</th>
+    <th>Ngày nhận</th>
+    <th>Phòng</th>
+    <th>Số người</th>
+    <th>Dịch vụ</th>
+    <th>Trạng thái</th>
+    <th>Thao tác</th>
+</tr>
+>>>>>>> Tung
 
 <!-- TÌM KIẾM -->
 <form method="get">
