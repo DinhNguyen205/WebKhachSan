@@ -78,7 +78,7 @@ button { padding: 5px 10px; cursor: pointer; }
 <table>
 <tr>
     <th>ID</th>
-    <th>Khách</th>
+    <th>Tên Khách Hàng</th>
     <th>Số Điện Thoại</th>
     <th>Ngày nhận</th>
     <th>Phòng</th>
